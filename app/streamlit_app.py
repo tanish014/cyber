@@ -13,7 +13,7 @@ st.set_page_config(layout="wide", page_title="AI-Based Cyber Threat Detector")
 def load_model():
    model = joblib.load("app/models/cyber_threat_rf_model.pkl")
    feature_names = model.feature_names_in_.tolist()
-    return model, feature_names
+   return model, feature_names
 
 model, feature_order = load_model()
 
