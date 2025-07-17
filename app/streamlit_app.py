@@ -11,7 +11,7 @@ st.set_page_config(layout="wide", page_title="AI-Based Cyber Threat Detector")
 # Load the model once (with feature names)
 @st.cache_resource
 def load_model():
- model = joblib.load("app/models/cyber_threat_rf_model.pkl")
+   model = joblib.load("app/models/cyber_threat_rf_model.pkl")
     feature_names = model.feature_names_in_.tolist()
     return model, feature_names
 
